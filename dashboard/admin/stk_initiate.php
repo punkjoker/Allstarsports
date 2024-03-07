@@ -5,8 +5,8 @@ if(isset($_POST['submit'])){
   date_default_timezone_set('Africa/Nairobi');
 
   # access token
-  $consumerKey = 'Keypt7N48B9aSa7P05c3XEY9tTrMO3nw'; //Fill with your app Consumer Key
-  $consumerSecret = 'SQhtNXAk1U2ni28V'; // Fill with your app Secret
+  $consumerKey = 'zMiELmMerTTGJ5g85IDYXXvWr7yQI12TseXLf45GOYg6sjXW'; //Fill with your app Consumer Key
+  $consumerSecret = 'PUiYf3tjg9wnNRcSC3JAw8K2qojtWA3EyFp44pW6AjPrS23zXLsYbSxWgAQMffId'; // Fill with your app Secret
 
   # define the variales
   # provide the following details, this part is found on your test credentials on the developer account
@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
   $initiate_url = 'https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest';
 
   # callback url
-  $CallBackURL = 'https://morning-forest-72309.herokuapp.com/callback_url.php';  
+  $CallBackURL = 'https://github.com/punkjoker/daraja-API.git';  
 
   $curl = curl_init($access_token_url);
   curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
